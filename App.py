@@ -9,6 +9,8 @@ uploaded=None
 
 # form=st.sidebar.form(key="my_form")
 
+st.write(f"{mn.os.environ["OPENAI_API_KEY"]}")
+
 submitted=st.sidebar.button("submit")
 
 selected=st.sidebar.selectbox("Type of document",options=["pdf_file","Webpage","Youtube Video"],index=None)

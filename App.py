@@ -34,7 +34,7 @@ elif selected=="Youtube Video":
 
 search=st.button("search")
 
-if selected and uploaded and query  and search:
+if selected and uploaded and query and os.path.exists("__pycache__/main.cpython-311.pyc") and search:
     if selected!="pdf_file" :
         st.write(mn.doc_Query(query))
     else:

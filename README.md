@@ -3,6 +3,7 @@ It's an AI-based app that simplifies understanding webpages, YouTube videos, and
 
 ## Introduction
 It's a basic prototype app designed for analyzing personal documents (in PDF format), webpage content, or YouTube videos. Users can simply ask questions about the content, and the app will provide answers sourced specifically from their personal data. It won't respond if the question is unrelated to the content source.
+URL= https://querai-jxpemqfu3u3qcsbmtaiqgh.streamlit.app/
 
 ## Technology used
  LLM and Embedding: OpenAI

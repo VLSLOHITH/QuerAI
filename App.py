@@ -8,8 +8,8 @@ st.title("QuerAI")
 uploaded=None
 
 # form=st.sidebar.form(key="my_form")
-
-st.write(f"{mn.os.environ["OPENAI_API_KEY"]}")
+key=mn.os.environ["OPENAI_API_KEY"]
+st.write(f"{key}")
 
 submitted=st.sidebar.button("submit")
 

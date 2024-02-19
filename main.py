@@ -6,10 +6,10 @@ from langchain.chains import LLMChain,RetrievalQAWithSourcesChain
 from langchain.vectorstores.faiss import FAISS
 from langchain.text_splitter import RecursiveCharacterTextSplitter
 from langchain.indexes import VectorstoreIndexCreator
-from dotenv import load_dotenv
+import os
+import streamlit as st
 
-
-load_dotenv()
+os.environ["OPENAI_API_KEY"]=st.secrets["OPENAI_API_KEY"]
 
 
 def Embeddings():

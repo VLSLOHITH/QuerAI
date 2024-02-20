@@ -10,7 +10,8 @@ uploaded=None
 # form=st.sidebar.form(key="my_form")
 
 submitted=st.sidebar.button("submit")
-st.info("please upload your source before diving into queries.",icon="ℹ️")
+if not(uploaded):
+    st.info("Ensure you upload your source first; check the sidebar for guidance.",icon="ℹ️")
 selected=st.sidebar.selectbox("Type of document",options=["pdf_file","Webpage","Youtube Video"],index=None)
 
 query=st.text_input(label="Ask Your Query?",max_chars=50)
@@ -31,7 +32,7 @@ elif selected=="Youtube Video":
     if uploaded and submitted:
         data=mn.Youtube_loader(uploaded)
         mn.Doc_vector_store(data)
-
+    
 search=st.button("search")
 
 if selected and uploaded and query and os.path.exists("__pycache__/main.cpython-311.pyc") and search:

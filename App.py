@@ -13,6 +13,7 @@ submitted=st.sidebar.button("submit")
 selected=st.sidebar.selectbox("Type of document",options=["pdf_file","Webpage","Youtube Video"],index=None)
 
 query=st.text_input(label="Ask Your Query?",max_chars=50)
+search=st.button("search")
 
 try:
     if selected=="pdf_file":
@@ -33,7 +34,6 @@ try:
             
         if not(uploaded):
             st.info("Ensure you upload your source first; check the sidebar for guidance.",icon="ℹ️")
-        search=st.button("search")
         
         if selected and uploaded and query and os.path.exists("__pycache__/main.cpython-311.pyc") and search:
             if selected!="pdf_file" :

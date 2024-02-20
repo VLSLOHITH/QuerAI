@@ -35,7 +35,7 @@ try:
             mn.Doc_vector_store(data)
 
     if uploaded:
-        del(i)
+        del i
         
     if selected and uploaded and query and os.path.exists("__pycache__/main.cpython-311.pyc") and search:
         if selected!="pdf_file" :

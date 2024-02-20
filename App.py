@@ -10,8 +10,7 @@ uploaded=None
 # form=st.sidebar.form(key="my_form")
 
 submitted=st.sidebar.button("submit")
-i="i"
-st.info("please upload your source before diving into queries.",icon=i)
+st.info("please upload your source before diving into queries.",icon="ℹ️")
 selected=st.sidebar.selectbox("Type of document",options=["pdf_file","Webpage","Youtube Video"],index=None)
 
 query=st.text_input(label="Ask Your Query?",max_chars=50)

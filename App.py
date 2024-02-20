@@ -15,8 +15,8 @@ selected=st.sidebar.selectbox("Type of document",options=["pdf_file","Webpage","
 query=st.text_input(label="Ask Your Query?",max_chars=50)
 search=st.button("search")
 
- if not(uploaded):
-        st.info("Ensure you upload your source first; check the sidebar for guidance.",icon="ℹ️")
+if not(uploaded):
+    st.info("Ensure you upload your source first; check the sidebar for guidance.",icon="ℹ️")
 try:
     if selected=="pdf_file":
         uploaded=st.sidebar.file_uploader("Choose Your PDF File",type="pdf")

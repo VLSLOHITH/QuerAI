@@ -35,11 +35,11 @@ try:
             mn.Doc_vector_store(data)
             
         
-   if selected and uploaded and query and os.path.exists("__pycache__/main.cpython-311.pyc") and search:
-      if selected!="pdf_file" :
-          st.write(mn.doc_Query(query))
-      else:
-          st.write(mn.pdf_Query(query))
+    if selected and uploaded and query and os.path.exists("__pycache__/main.cpython-311.pyc") and search:
+        if selected!="pdf_file" :
+            st.write(mn.doc_Query(query))
+        else:
+            st.write(mn.pdf_Query(query))
 except ValueError :
     st.error("Please,give the correct formate of source.",icon="❗")
 except IndexError:

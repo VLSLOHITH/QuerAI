@@ -16,7 +16,7 @@ query=st.text_input(label="Ask Your Query?",max_chars=50)
 search=st.button("search")
 
 if not(uploaded):
-    i=st.info("Ensure you upload your source first; check the sidebar for guidance.",icon="ℹ️")
+    st.info("Ensure you upload your source first; check the sidebar for guidance.",icon="ℹ️")
 try:
     if selected=="pdf_file":
         uploaded=st.sidebar.file_uploader("Choose Your PDF File",type="pdf")
@@ -35,7 +35,7 @@ try:
             mn.Doc_vector_store(data)
 
     if uploaded:
-        del i
+        del st.info("Ensure you upload your source first; check the sidebar for guidance.",icon="ℹ️")
         
     if selected and uploaded and query and os.path.exists("__pycache__/main.cpython-311.pyc") and search:
         if selected!="pdf_file" :

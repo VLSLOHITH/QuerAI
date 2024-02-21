@@ -6,10 +6,10 @@ It's a basic prototype app designed for analyzing personal documents (in PDF for
 URL= https://querai-jxpemqfu3u3qcsbmtaiqgh.streamlit.app/
 
 ## Technology used
- LLM and Embedding: OpenAI
- Backend Framework: Langchain
- Frontend Framework: Streamlit
- Vector Database: faiss
+ -LLM and Embedding: OpenAI
+ -Backend Framework: Langchain
+ -Frontend Framework: Streamlit
+ -Vector Database: faiss
 
  ## Usage
 1.To simplify investment analysis using newspaper articles, brokers can input webpage URLs into QuerAI and ask specific questions. For instance, if they're considering investing in automobiles, they can inquire if the article covers this topic and request a summary if relevant.

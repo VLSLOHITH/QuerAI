@@ -34,7 +34,7 @@ try:
             mn.Doc_vector_store(data)
 
     if not(uploaded):
-        st.info("Ensure you upload your source first; check the sidebar for guidance.",icon="ℹ️")
+        st.info("Make sure to upload your source files first, then click the submit button located at the top of the sidebar. Refer to the sidebar for further instructions.",icon="ℹ️")
         
     if selected and uploaded and query and os.path.exists("__pycache__/main.cpython-311.pyc") and search:
         if selected!="pdf_file" :

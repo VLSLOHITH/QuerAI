@@ -34,7 +34,7 @@ try:
             mn.Doc_vector_store(data)
 
     if not(uploaded):
-        st.header(':orange[Hi ! I am QuerAI] :sunglasses:', divider='rainbow')
+        st.header(':red[Hail Hydra! ] :orange[Just kidding, it's QuerAI!] :sunglasses:', divider='rainbow')
 
         # Displaying the text
         about_text = """I'm just a basic prototype, you know, but I can handle personal documents (in PDF format), webpage content, or YouTube videos like a champ. Go ahead, ask me anything from the stuff you've given me, and I'll do my best to provide answers. Of course, if your question doesn't have anything to do with what I've been given, well, I'm not a mind reader!"""

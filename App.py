@@ -15,7 +15,7 @@ selected=st.sidebar.selectbox("Type of document",options=["pdf_file","Webpage","
 query=st.text_input(label="Ask Your Query?",max_chars=50)
 search=st.button("search")
 
-st.header('orange[Hi I am QuerAI] :sunglasses:', divider='rainbow')
+st.header(':orange[Hi I am QuerAI] :sunglasses:', divider='rainbow')
 
 # Displaying the text
 about_text = """

@@ -18,9 +18,7 @@ search=st.button("search")
 st.header(':orange[Hi ! I am QuerAI] :sunglasses:', divider='rainbow')
 
 # Displaying the text
-about_text = """
-It's a basic prototype app designed for analyzing personal documents (in PDF format), webpage content, or YouTube videos. Users can simply ask questions about the content, and the app will provide answers sourced specifically from their personal data. It won't respond if the question is unrelated to the content source.
-"""
+about_text = """I'm just a basic prototype, you know, but I can handle personal documents (in PDF format), webpage content, or YouTube videos like a champ. Go ahead, ask me anything from the stuff you've given me, and I'll do my best to provide answers. Of course, if your question doesn't have anything to do with what I've been given, well, I'm not a mind reader!"""
 st.write(about_text)
 
 

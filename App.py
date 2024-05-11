@@ -15,6 +15,14 @@ selected=st.sidebar.selectbox("Type of document",options=["pdf_file","Webpage","
 query=st.text_input(label="Ask Your Query?",max_chars=50)
 search=st.button("search")
 
+st.header('orange[Hi I am QuerAI] :sunglasses:', divider='rainbow')
+
+# Displaying the text
+about_text = """
+It's a basic prototype app designed for analyzing personal documents (in PDF format), webpage content, or YouTube videos. Users can simply ask questions about the content, and the app will provide answers sourced specifically from their personal data. It won't respond if the question is unrelated to the content source.
+"""
+st.write(about_text)
+
 
 try:
     if selected=="pdf_file":

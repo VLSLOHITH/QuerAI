@@ -15,12 +15,6 @@ selected=st.sidebar.selectbox("Type of document",options=["pdf_file","Webpage","
 query=st.text_input(label="Ask Your Query?",max_chars=50)
 search=st.button("search")
 
-st.header(':orange[Hi ! I am QuerAI] :sunglasses:', divider='rainbow')
-
-# Displaying the text
-about_text = """I'm just a basic prototype, you know, but I can handle personal documents (in PDF format), webpage content, or YouTube videos like a champ. Go ahead, ask me anything from the stuff you've given me, and I'll do my best to provide answers. Of course, if your question doesn't have anything to do with what I've been given, well, I'm not a mind reader!"""
-st.write(about_text)
-
 
 try:
     if selected=="pdf_file":
@@ -40,6 +34,12 @@ try:
             mn.Doc_vector_store(data)
 
     if not(uploaded):
+        st.header(':orange[Hi ! I am QuerAI] :sunglasses:', divider='rainbow')
+
+        # Displaying the text
+        about_text = """I'm just a basic prototype, you know, but I can handle personal documents (in PDF format), webpage content, or YouTube videos like a champ. Go ahead, ask me anything from the stuff you've given me, and I'll do my best to provide answers. Of course, if your question doesn't have anything to do with what I've been given, well, I'm not a mind reader!"""
+        st.write(about_text)
+
         st.info("Make sure to upload your source files first, then click the submit button located at the top of the sidebar. Refer to the sidebar for further instructions.",icon="ℹ️")
         
     if selected and uploaded and query and os.path.exists("__pycache__/main.cpython-311.pyc") and search:

@@ -100,13 +100,7 @@ def doc_Query(query):
 
     return response["answer"]
 
-# def Assistant(url,question):
-#     data=pdf_loader(url)
-#     vector_index=Str_vector_store(data)
 
-#     return pdf_Query(question,vector_index)
-
-# print(Assistant(r"C:\Users\sailo\Downloads\Resume.pdf","what is meant by laptop?"))
 
 
 
